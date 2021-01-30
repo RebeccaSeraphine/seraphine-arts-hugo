@@ -1,5 +1,9 @@
 {{ define "main" }}
 <div>
   <h1 class="title">{{ .Site.Title }}</h1>
+
+  {{- $imageResource := resources.Get "images/welcomeimage.jpg" -}}
+  {{ $image := $imageResource.Resize "1080x q80" }}
+  <img id="welcomeimage" src="{{ $image.RelPermalink }}" alt="welcome image"/>
 </div>
 {{ end }}

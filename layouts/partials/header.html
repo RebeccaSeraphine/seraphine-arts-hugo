@@ -1,3 +1,7 @@
-<div>//header</div>
-
-{{- partial "nav.html" . -}}
+<header>
+  {{- $imageResource := resources.Get "images/homeicon.png" -}}
+  {{ $image := $imageResource.Fit "40x40" }}
+  <a href="/"> <img src="{{ $image.RelPermalink }}" alt="home" /></a>
+  
+  {{- partial "nav.html" . -}}
+</header>
