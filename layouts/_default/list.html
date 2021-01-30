@@ -7,14 +7,10 @@
           <p>{{ .Summary }}</p>
       </a>
       
-      {{- $imageParam := .Param "image" -}}
-      {{if $imageParam}}
-        {{- $imageResource := .Resources.GetMatch $imageParam -}}
-        {{if $imageResource}}
-          {{ $image := $imageResource.Resize "200x q60" }}
-          <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
-        {{end}}
-      {{end}}
+      {{- range first 1 (.Resources.ByType "image") -}}
+        {{- $image := .Resize "200x q60" -}}
+        <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
+      {{ end }}
   </section>
   {{ end }}
 {{ end }}

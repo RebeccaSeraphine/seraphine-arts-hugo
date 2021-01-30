@@ -1,15 +1,11 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   <br />
-  <br />
 
-  {{- $imageParam := .Param "image" -}}
-      {{if $imageParam}}
-        {{- $imageResource := .Resources.GetMatch $imageParam -}}
-        {{if $imageResource}}
-          {{ $image := $imageResource.Resize "1000x q95" }}
-          <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
-        {{end}}
-      {{end}}
+  {{- range first 1 (.Resources.ByType "image") -}}
+    {{- $image := .Resize "1000x q95" -}}
+    <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
+  {{ end }}
+
   {{ .Content }}
 {{ end }}
