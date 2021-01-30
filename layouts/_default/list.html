@@ -1,11 +1,20 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ range .Pages.ByPublishDate.Reverse }}
-  <p>
+  <section class="post">
       <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
       <a class="summary" href="{{ .RelPermalink }}">
           <p>{{ .Summary }}</p>
       </a>
-  </p>
+      
+      {{- $imageParam := .Param "image" -}}
+      {{if $imageParam}}
+        {{- $imageResource := .Resources.GetMatch $imageParam -}}
+        {{if $imageResource}}
+          {{ $image := $imageResource.Resize "200x q80" }}
+          <img src="{{ $image.RelPermalink }}" alt="home" />
+        {{end}}
+      {{end}}
+  </section>
   {{ end }}
 {{ end }}

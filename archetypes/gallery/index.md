@@ -2,4 +2,8 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
+image: "images/full.png"
 ---
+
+![{{.Name}}](images/full.png)
+
