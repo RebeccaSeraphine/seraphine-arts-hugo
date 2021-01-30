@@ -1,5 +1,8 @@
 header {
+  width: 100%;
   display: inline-block;
+  background-color: $primaryColor;
+  color: $bgColor;
 }
 
 nav {
@@ -8,4 +11,15 @@ nav {
     list-style: none;
     display: inline;
   }
+
+
+  a {
+    text-decoration: none;
+    color: $bgColor;
+  
+    &.active {
+      color: $secondaryColor;
+    }
+  }
+
 }
