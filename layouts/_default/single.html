@@ -2,5 +2,14 @@
   <h1>{{ .Title }}</h1>
   <br />
   <br />
+
+  {{- $imageParam := .Param "image" -}}
+      {{if $imageParam}}
+        {{- $imageResource := .Resources.GetMatch $imageParam -}}
+        {{if $imageResource}}
+          {{ $image := $imageResource.Resize "1000x q95" }}
+          <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
+        {{end}}
+      {{end}}
   {{ .Content }}
 {{ end }}

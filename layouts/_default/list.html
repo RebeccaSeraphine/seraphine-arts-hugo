@@ -11,8 +11,8 @@
       {{if $imageParam}}
         {{- $imageResource := .Resources.GetMatch $imageParam -}}
         {{if $imageResource}}
-          {{ $image := $imageResource.Resize "200x q80" }}
-          <img src="{{ $image.RelPermalink }}" alt="home" />
+          {{ $image := $imageResource.Resize "200x q60" }}
+          <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
         {{end}}
       {{end}}
   </section>

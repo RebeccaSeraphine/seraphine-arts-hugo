@@ -6,4 +6,3 @@ image: "images/full.png"
 ---
 
 This is some panda with an image ... 
-![panda](images/full.png)

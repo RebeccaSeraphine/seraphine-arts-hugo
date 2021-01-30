@@ -6,4 +6,3 @@ image: "images/full.png"
 ---
 
 I am a cat. Meow.
-![cat](images/full.png)

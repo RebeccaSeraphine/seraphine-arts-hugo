@@ -6,4 +6,3 @@ image: "images/full.png"
 ---
 
 I am a wolf. Rawr.
-![wolf](images/full.png)
