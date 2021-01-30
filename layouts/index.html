@@ -2,8 +2,41 @@
 <div>
   <h1 class="title">{{ .Site.Title }}</h1>
 
-  {{- $imageResource := resources.Get "images/welcomeimage.jpg" -}}
-  {{ $image := $imageResource.Resize "1080x q80" }}
-  <img id="welcomeimage" src="{{ $image.RelPermalink }}" alt="welcome image"/>
+  <section>
+    {{- $imageResource := resources.Get "images/welcomeimage.jpg" -}} {{ $image := $imageResource.Resize "1080x q80" }}
+    <img id="welcomeimage" src="{{ $image.RelPermalink }}" alt="welcome image" />
+  </section>
+
+  <section>
+    <h2>some of my images</h2>
+    {{- range where .Pages "Name" "Galleries" -}}
+      {{ range first 3 .Pages.ByDate.Reverse }} 
+        <br/>
+        <h3>{{ .Name }}</h3>
+        <p>{{ .Summary }}</p>
+        {{- range first 1 (.Resources.ByType "image") -}}
+          {{- $image := .Resize "200x q60" -}}
+          <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
+        {{ end }}
+      {{ end }} 
+    {{ end }}
+    <a href="/gallery"> show more images</a>
+  </section>
+      
+  <section>
+    <h2>some of my images</h2>
+    {{- range where .Pages "Name" "Products" -}}
+      {{ range first 3 .Pages.ByDate.Reverse }} 
+        <br/>
+        <h3>{{ .Name }}</h3>
+        <p>{{ .Summary }}</p>
+        {{- range first 1 (.Resources.ByType "image") -}}
+          {{- $image := .Resize "200x q60" -}}
+          <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
+        {{ end }}
+      {{ end }} 
+    {{ end }}
+    <a href="/product"> show more products</a>
+  </section>
 </div>
 {{ end }}
