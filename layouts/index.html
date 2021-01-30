@@ -10,33 +10,39 @@
   <section>
     <h2>some of my images</h2>
     {{- range where .Pages "Name" "Galleries" -}}
-      {{ range first 3 .Pages.ByDate.Reverse }} 
-        <br/>
-        <h3>{{ .Name }}</h3>
-        <p>{{ .Summary }}</p>
-        {{- range first 1 (.Resources.ByType "image") -}}
-          {{- $image := .Resize "200x q60" -}}
-          <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
-        {{ end }}
+      {{ range first 3 .Pages.ByDate.Reverse }}
+        <div class="box">
+          <a href="{{ .RelPermalink }}">
+            <h3>{{ .Name }}</h3>
+            <p>{{ .Summary }}</p>
+            {{- range first 1 (.Resources.ByType "image") -}}
+              {{- $image := .Resize "200x q60" -}}
+              <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
+            {{ end }}
+          </a>
+        </div>
       {{ end }} 
+      <a class="button" href="{{.RelPermalink}}"> show more products</a>
     {{ end }}
-    <a href="/gallery"> show more images</a>
   </section>
       
   <section>
-    <h2>some of my images</h2>
+    <h2>some of my products</h2>
     {{- range where .Pages "Name" "Products" -}}
       {{ range first 3 .Pages.ByDate.Reverse }} 
-        <br/>
-        <h3>{{ .Name }}</h3>
-        <p>{{ .Summary }}</p>
-        {{- range first 1 (.Resources.ByType "image") -}}
-          {{- $image := .Resize "200x q60" -}}
-          <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
-        {{ end }}
+        <div class="box">
+          <a href="{{ .RelPermalink }}">
+            <h3>{{ .Name }}</h3>
+            <p>{{ .Summary }}</p>
+            {{- range first 1 (.Resources.ByType "image") -}}
+              {{- $image := .Resize "200x q60" -}}
+              <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
+            {{ end }}
+          </a>
+        </div>
       {{ end }} 
+      <a class="button" href="{{.RelPermalink}}"> show more products</a>
     {{ end }}
-    <a href="/product"> show more products</a>
   </section>
 </div>
 {{ end }}
