@@ -12,5 +12,5 @@ A page primarily meant for use as an art portfolio. Since I'm not planning to re
 
 ## create new content
 
-- `hugo new gallery` for new gallery content - creates a full new subfolder including images etc.
+- `hugo new gallery/<NEW_NAME>` or `hugo new --kind gallery <SOME>/<PATH>` for new gallery content - creates a full new subfolder including images etc.
 - `hugo new product.md` for new product content - creates only the new markdown file
