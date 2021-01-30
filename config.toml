@@ -1,3 +1,4 @@
 baseURL = "https://artsy.com"
 languageCode = "en-us"
 title = "an artsy page"
+sectionPagesMenu = "main"
