@@ -9,7 +9,7 @@
 
   <section>
     <h2>some of my images</h2>
-    {{- range where .Pages "Name" "Galleries" -}}
+    {{- range where .Pages "Name" "gallery" -}}
       {{ range first 3 .Pages.ByDate.Reverse }}
         <div class="box">
           <a href="{{ .RelPermalink }}">
@@ -28,7 +28,7 @@
       
   <section>
     <h2>some of my products</h2>
-    {{- range where .Pages "Name" "Products" -}}
+    {{- range where .Pages "Name" "products" -}}
       {{ range first 3 .Pages.ByDate.Reverse }} 
         <div class="box">
           <a href="{{ .RelPermalink }}">
