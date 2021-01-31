@@ -2,6 +2,12 @@
   <h1>{{ .Title }}</h1>
   <br />
 
+  {{- range first 1 (.Resources.Match "pdf/*") -}}
+    <a class="button" href="{{.RelPermalink}}" target="_blank">Download as PDF</a>
+  {{ end }}
+
+  <br/>
+  
   {{- range first 1 (.Resources.ByType "image") -}}
     {{- $image := .Resize "1000x q95" -}}
     <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
