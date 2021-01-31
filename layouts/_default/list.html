@@ -5,11 +5,10 @@
     <a href="{{ .RelPermalink }}">
       <h3>{{ .Title }}</h3>
       <p>{{ .Summary }}</p>
-      
-      {{- range first 1 (.Resources.ByType "image") -}}
-        {{- $image := .Resize "200x q60" -}}
-        <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
-      {{ end }}
+
+      {{ .Scratch.Set "width" "200"}}
+      {{ .Scratch.Set "quality" "60"}}
+      {{- partial "attachedImage.html" . -}}
     </a>
   </section>
   {{ end }}

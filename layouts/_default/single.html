@@ -8,10 +8,9 @@
 
   <br/>
   
-  {{- range first 1 (.Resources.ByType "image") -}}
-    {{- $image := .Resize "1000x q95" -}}
-    <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
-  {{ end }}
+  {{ .Scratch.Set "width" "1000"}}
+  {{ .Scratch.Set "quality" "95"}}
+  {{- partial "attachedImage.html" . -}}
 
   {{ .Content }}
 {{ end }}

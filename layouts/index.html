@@ -9,40 +9,16 @@
 
   <section>
     <h2>some of my images</h2>
-    {{- range where .Pages "Name" "gallery" -}}
-      {{ range first 3 .Pages.ByDate.Reverse }}
-        <div class="box">
-          <a href="{{ .RelPermalink }}">
-            <h3>{{ .Name }}</h3>
-            <p>{{ .Summary }}</p>
-            {{- range first 1 (.Resources.ByType "image") -}}
-              {{- $image := .Resize "200x q60" -}}
-              <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
-            {{ end }}
-          </a>
-        </div>
-      {{ end }} 
-      <a class="button" href="{{.RelPermalink}}"> show more products</a>
-    {{ end }}
+    {{ .Scratch.Set "pageNumber" "3"}}
+    {{ .Scratch.Set "category" "gallery"}}
+    {{- partial "latest.html" . -}}
   </section>
       
   <section>
     <h2>some of my products</h2>
-    {{- range where .Pages "Name" "products" -}}
-      {{ range first 3 .Pages.ByDate.Reverse }} 
-        <div class="box">
-          <a href="{{ .RelPermalink }}">
-            <h3>{{ .Name }}</h3>
-            <p>{{ .Summary }}</p>
-            {{- range first 1 (.Resources.ByType "image") -}}
-              {{- $image := .Resize "200x q60" -}}
-              <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
-            {{ end }}
-          </a>
-        </div>
-      {{ end }} 
-      <a class="button" href="{{.RelPermalink}}"> show more products</a>
-    {{ end }}
+    {{ .Scratch.Set "pageNumber" "3"}}
+    {{ .Scratch.Set "category" "products"}}
+    {{- partial "latest.html" . -}}
   </section>
 </div>
 {{ end }}
