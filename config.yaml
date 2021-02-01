@@ -1,4 +1,3 @@
 baseURL: "https://artsy.com"
 languageCode: "en-us"
 title: "an artsy page"
-#sectionPagesMenu: "main" #disable automatic main menu for manual ordering
