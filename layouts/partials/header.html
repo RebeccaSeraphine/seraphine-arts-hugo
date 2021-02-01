@@ -1,7 +1,7 @@
 <header>
   {{- $imageResource := resources.Get "images/homeicon.png" -}}
   {{ $image := $imageResource.Fit "40x40" }}
-  <a href="/"> <img src="{{ $image.RelPermalink }}" alt="home" /></a>
+  <a href="{{ "/" | relLangURL }}"> <img src="{{ $image.RelPermalink }}" alt="home" /></a>
   
   {{- partial "nav.html" . -}}
   {{- partial "i18nlist.html" . -}}

@@ -2,6 +2,7 @@ switchLang: "switch to"
 nav:
   gallery: "gallery"
   products: "products"
+  legal: "legal information"
 home:
   galleryheader: "Dese mi pix :)"
   productheader: "Dese mi products :)"
