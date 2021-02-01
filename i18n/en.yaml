@@ -1,0 +1,10 @@
+switchLang: "switch to"
+nav:
+  gallery: "gallery"
+  products: "products"
+home:
+  galleryheader: "Dese mi pix :)"
+  productheader: "Dese mi products :)"
+buttons:
+  pdfdownload: "Download PDF"
+  showmore: "Show me more"

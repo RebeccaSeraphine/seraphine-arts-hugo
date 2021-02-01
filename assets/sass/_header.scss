@@ -3,6 +3,9 @@ header {
   display: inline-block;
   background-color: $primaryColor;
   color: $bgColor;
+  &>*{
+    display: inline-block;
+  }
 }
 
 nav {

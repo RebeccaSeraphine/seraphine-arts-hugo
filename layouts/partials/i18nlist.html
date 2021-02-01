@@ -1,0 +1,9 @@
+{{ if .IsTranslated }}
+<ul id="lang-picker">
+    {{ range .Translations }}
+    <li>
+        <a href="{{ .Permalink }}">{{ i18n "switchLang"}}: {{ .Language }}</a>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}

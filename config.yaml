@@ -1,3 +1,9 @@
 baseURL: "https://artsy.com"
-languageCode: "en-us"
-title: "an artsy page"
+defaultContentLanguage: en
+languages:
+  en:
+    title: "an artsy page"
+    weight: 1
+  de:
+    title: "Kuhuuunst 🎨"
+    weight: 2

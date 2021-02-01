@@ -1,9 +1,9 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  <h1>{{ .Title | title }}</h1>
   <br />
 
   {{- range first 1 (.Resources.Match "pdf/*") -}}
-    <a class="button" href="{{.RelPermalink}}" target="_blank">Download as PDF</a>
+    <a class="button" href="{{.RelPermalink}}" target="_blank">{{ i18n "buttons.pdfdownload" }}</a>
   {{ end }}
 
   <br/>

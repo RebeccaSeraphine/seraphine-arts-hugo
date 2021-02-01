@@ -1,18 +1,20 @@
-{{$num := .Scratch.Get "pageNumber"}}
-{{$cat := .Scratch.Get "category"}}
+{{ $num := .Scratch.Get "pageNumber"}}
+{{ $cat := .Scratch.Get "category" | lower }}
 
-{{- range where .Pages "Name" $cat -}}
-  {{ range first $num .Pages.ByDate.Reverse }} 
-    <div class="box">
-      <a href="{{ .RelPermalink }}">
-        <h3>{{ .Name }}</h3>
-        <p>{{ .Summary }}</p>
+{{- range .Pages -}}
+  {{- if eq (lower .Name)  $cat -}}
+    {{ range first $num .Pages.ByDate.Reverse }} 
+      <div class="box">
+        <a href="{{ .RelPermalink }}">
+          <h3>{{ .Name }}</h3>
+          <p>{{ .Summary }}</p>
 
-        {{ .Scratch.Set "width" "200"}}
-        {{ .Scratch.Set "quality" "60"}}
-        {{- partial "attachedImage.html" . -}}
-      </a>
-    </div>
+          {{ .Scratch.Set "width" "200"}}
+          {{ .Scratch.Set "quality" "60"}}
+          {{- partial "attachedImage.html" . -}}
+        </a>
+      </div>
+    {{ end }} 
+    <a class="button" href="{{.RelPermalink}}">{{ i18n "buttons.showmore"}}</a>
   {{ end }} 
-  <a class="button" href="{{.RelPermalink}}"> show more products</a>
 {{ end }}
