@@ -1,8 +1,12 @@
 <header>
-  {{- $imageResource := resources.Get "images/homeicon.png" -}}
+  {{- $imageResource := resources.Get "images/seraphine-arts-logo.png" -}}
   {{ $image := $imageResource.Fit "40x40" }}
-  <a href="{{ "/" | relLangURL }}"> <img src="{{ $image.RelPermalink }}" alt="home" /></a>
   
+  <a id="nav-brand" href="{{ "/" | relLangURL }}"> 
+    <img src="{{ $image.RelPermalink }}" alt="home" />
+    <p>Seraphine Arts</p>
+  </a>
+
   {{- partial "nav.html" . -}}
   {{- partial "i18nlist.html" . -}}
 </header>

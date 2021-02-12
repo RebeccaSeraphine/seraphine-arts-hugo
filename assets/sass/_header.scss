@@ -1,10 +1,21 @@
 header {
   width: 100%;
+  height: 5rem;
   display: inline-block;
-  background-color: $primaryColor;
-  color: $bgColor;
-  &>*{
+  text-align: left;
+  & > * {
+    margin: 1rem 0 1rem 1rem;
     display: inline-block;
+    vertical-align: middle;
+  }
+  #nav-brand {
+    & > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    p {
+      margin-left: 1rem;
+    }
   }
 }
 
@@ -15,14 +26,9 @@ nav {
     list-style: none;
     display: inline;
   }
-
-
   a {
-    color: $bgColor;
-  
     &.active {
-      color: $secondaryColor;
+      color: $primaryColor;
     }
   }
-
 }

@@ -1,14 +1,13 @@
 // set default colors
 $bgColor: #ffffff !default;
-$fgColor: #000000 !default;
-$primaryColor: #040a37;
-$secondaryColor: #34d3bb;
+$fontColor: #000000 !default;
+$primaryColor: #34d3bb;
 
 // overwrite, for dark scheme
-@media (prefers-color-scheme: dark) {
-  $bgColor: #121212 !global; // only local scope, if not !global
-  $fgColor: #ffffff !global;
-  $primaryColor: #3a59b8 !global;
-}
+// @media (prefers-color-scheme: dark) {
+//   $bgColor: #121212 !global; // only local scope, if not !global
+//   $fgColor: #ffffff !global;
+//   $primaryColor: #3a59b8 !global;
+// }
 
 $fontStack: "Open Sans", sans-serif;

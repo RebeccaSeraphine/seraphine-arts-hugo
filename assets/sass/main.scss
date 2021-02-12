@@ -20,10 +20,10 @@ body {
 html {
   height: 100%;
   background-color: $bgColor;
-  color: $fgColor;
+  color: $fontColor;
 }
 
-#welcomeimage{
+#welcomeimage {
   width: 100%;
 }
 
@@ -32,7 +32,7 @@ a {
   color: inherit;
 
   &:hover {
-    color: $secondaryColor;
+    color: $primaryColor;
   }
 }
 
@@ -41,7 +41,7 @@ section {
 }
 
 .box {
-  margin:2em auto;
+  margin: 2em auto;
 }
 
 .button {
@@ -51,5 +51,5 @@ section {
   padding: 1em 2em;
   border: 1px solid $primaryColor;
   background-color: $primaryColor;
-  color: $secondaryColor;
+  color: $primaryColor;
 }
