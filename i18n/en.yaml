@@ -1,12 +1,12 @@
 nav:
   illustrations: "illustrations"
-  shop: "shop"
+  creativecorner: "Malecke"
   legal: "legal information"
   shipping: "shipping information"
   top: "back to top"
 home:
   illustrationsheader: "Dese mi pix :)"
-  shopheader: "Dese mi products :)"
+  creativecornerheader: "Dese mi coloring pages :)"
 buttons:
   pdfdownload: "Download PDF"
   showmore: "Show me more"

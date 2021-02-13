@@ -15,9 +15,9 @@
   </section>
       
   <section>
-    <h2>{{i18n "home.shopheader" | title}}</h2>
+    <h2>{{i18n "home.creativecornerheader" | title}}</h2>
     {{ .Scratch.Set "pageNumber" "3"}}
-    {{ .Scratch.Set "category" (i18n "nav.shop" | lower)}}
+    {{ .Scratch.Set "category" (i18n "nav.creativecorner" | lower)}}
     {{- partial "latest.html" . -}}
   </section>
 </div>
