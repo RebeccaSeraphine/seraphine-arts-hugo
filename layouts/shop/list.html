@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <h1>{{ .Title | title }}</h1>
+  {{ range .Pages.ByPublishDate.Reverse }}
+    <a  href="{{ .RelPermalink }}">
+      {{ .Scratch.Set "width" "500"}} 
+      {{ .Scratch.Set "quality" "80"}}
+      {{- partial "attachedImage.html" . -}}
+      <h3>{{ .Title | title }}</h3>
+      <p>{{ .Summary }}</p>
+    </a>
+  {{ end }} 
+{{ end }}
+    
