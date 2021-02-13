@@ -1,18 +1,13 @@
 {{ $num := .Scratch.Get "pageNumber"}}
 {{ $cat := .Scratch.Get "category" | lower }}
 
+<div class="list-gallery">
 {{- range where .Pages "Section" $cat -}}
     {{ range first $num .Pages.ByDate.Reverse }} 
-      <div class="box">
-        <a href="{{ .RelPermalink }}">
-          <h3>{{ .Name }}</h3>
-          <p>{{ .Summary }}</p>
 
-          {{ .Scratch.Set "width" "200"}}
-          {{ .Scratch.Set "quality" "60"}}
-          {{- partial "attachedImage.html" . -}}
-        </a>
-      </div>
+    {{partial "imageoverlay.html" .}}
+
     {{ end }} 
-    <a class="button" href="{{.RelPermalink}}">{{ i18n "buttons.showmore"}}</a>
-{{ end }}
+    {{ end }}
+  </div>
+  <a class="button" href="{{.RelPermalink}}">{{ i18n "buttons.showmore"}}</a>

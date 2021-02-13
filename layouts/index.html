@@ -1,15 +1,18 @@
 {{ define "main" }}
 <div>
-  <h1 class="title">{{ .Site.Title | title }}</h1>
+  <!-- <h1 class="title">{{ .Site.Title | title }}</h1> -->
   
   <section>
-    {{- $imageResource := resources.Get "images/welcomeimage.jpg" -}} {{ $image := $imageResource.Resize "1080x q80" }}
+    {{- $imageResource := resources.Get "images/colorful-wall-art.jpg" -}} 
+    {{ $image := $imageResource.Resize "2160x q100" }}
     <img id="welcomeimage" src="{{ $image.RelPermalink }}" alt="welcome image" />
   </section>
 
-  <section>
-    <h2>{{i18n "home.illustrationsheader" | title}}</h2>
-    {{ .Scratch.Set "pageNumber" "3"}}
+  <section id="landingpage-section-illustrations">
+    <a href="{{ "illustrations/" | relLangURL }}">{{- i18n "nav.illustrations" | title -}}
+      <h2>{{i18n "home.illustrationsheader" | title}}</h2>
+    </a>
+    {{ .Scratch.Set "pageNumber" "5"}}
     {{ .Scratch.Set "category" "illustrations"}}
     {{- partial "latest.html" . -}}
   </section>

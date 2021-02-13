@@ -1,0 +1,14 @@
+#welcomeimage {
+    width: 100%;
+  }
+#landingpage-section-illustrations{
+    margin-top: 2rem;    
+}
+
+  .landing-page-section{
+      display: grid;
+      grid-template-columns: repeat(5, 20%);
+      img {
+        width: 100%;
+      }
+  }

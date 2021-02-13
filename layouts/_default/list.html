@@ -2,22 +2,7 @@
   <!-- <h1>{{ .Title | title }}</h1> -->
   <div class="list-gallery">
     {{ range .Pages.ByPublishDate.Reverse }}
-      <div class="hovereffect">
-        <a  href="{{ .RelPermalink }}">
-          <div class="image-post">
-            {{ .Scratch.Set "width" "500"}} 
-            {{ .Scratch.Set "quality" "80"}}
-            {{- partial "attachedImage.html" . -}}
-          </div>
-          <div class="overlay">
-            <div class="overlay-text">   
-              <h3>{{ .Title | title }}</h3>
-              <p>{{ .Date.Format "2006" }}</p>
-              <!-- <p>{{ .Summary }}</p> -->
-            </div>
-          </div>
-        </a>
-      </div>
+    {{partial "imageoverlay.html" .}}
       {{ end }} 
     </div>
     {{ end }}

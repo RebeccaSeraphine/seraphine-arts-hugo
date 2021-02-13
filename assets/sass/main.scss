@@ -2,6 +2,7 @@
 @import "header";
 @import "footer";
 @import "listpage";
+@import "index";
 
 * {
   margin: 0;
@@ -21,10 +22,6 @@ html {
   height: 100%;
   background-color: $bgColor;
   color: $fontColor;
-}
-
-#welcomeimage {
-  width: 100%;
 }
 
 a {
