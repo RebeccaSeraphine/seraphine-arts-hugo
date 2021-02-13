@@ -4,7 +4,7 @@ date: 2021-01-31T14:07:56+01:00
 draft: true
 menu:
   main:
-    weight: 100
+    weight: 2
 ---
 
 coloring page blabla
