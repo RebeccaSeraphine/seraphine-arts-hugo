@@ -8,16 +8,16 @@
   </section>
 
   <section>
-    <h2>{{i18n "home.galleryheader" | title}}</h2>
+    <h2>{{i18n "home.illustrationsheader" | title}}</h2>
     {{ .Scratch.Set "pageNumber" "3"}}
-    {{ .Scratch.Set "category" (i18n "nav.gallery" | lower)}}
+    {{ .Scratch.Set "category" (i18n "nav.illustrations" | lower)}}
     {{- partial "latest.html" . -}}
   </section>
       
   <section>
-    <h2>{{i18n "home.productheader" | title}}</h2>
+    <h2>{{i18n "home.shopheader" | title}}</h2>
     {{ .Scratch.Set "pageNumber" "3"}}
-    {{ .Scratch.Set "category" (i18n "nav.products" | lower)}}
+    {{ .Scratch.Set "category" (i18n "nav.shop" | lower)}}
     {{- partial "latest.html" . -}}
   </section>
 </div>

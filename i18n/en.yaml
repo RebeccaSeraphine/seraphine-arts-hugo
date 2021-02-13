@@ -1,12 +1,12 @@
 nav:
-  gallery: "gallery"
-  products: "products"
+  illustrations: "illustrations"
+  shop: "shop"
   legal: "legal information"
   shipping: "shipping information"
   top: "back to top"
 home:
-  galleryheader: "Dese mi pix :)"
-  productheader: "Dese mi products :)"
+  illustrationsheader: "Dese mi pix :)"
+  shopheader: "Dese mi products :)"
 buttons:
   pdfdownload: "Download PDF"
   showmore: "Show me more"

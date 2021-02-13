@@ -1,5 +1,5 @@
 ---
-title: "Produkte"
+title: "shop"
 date: 2021-01-31T14:07:56+01:00
 draft: true
 menu:
@@ -7,4 +7,4 @@ menu:
     weight: 2
 ---
 
-Produkte unsoweida
+shop blabla
