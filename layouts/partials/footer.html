@@ -6,8 +6,8 @@
   </div>
     
   <div>
-    <p>© 2018 - 2021 Seraphine Arts</p>
-    <p>All Rights Reserved.</p>
+    <p>© 2018 - {{ .Date.Format "2006" }} Seraphine Arts</p>
+    <p>{{ i18n "footer.rightsreserved" }}</p>
   </div>
   <a href="#top">{{ i18n "nav.top"}}</a>
 </footer>

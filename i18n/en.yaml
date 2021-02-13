@@ -10,3 +10,5 @@ home:
 buttons:
   pdfdownload: "Download PDF"
   showmore: "Show me more"
+footer:
+  rightsreserved: "All Rights Reserved."
