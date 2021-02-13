@@ -14,13 +14,18 @@ header {
       vertical-align: middle;
     }
     p {
-      margin-left: 1rem;
+      margin-left: 0.5rem;
+      //font-style: italic;
+      font-size: 1.4rem;
     }
   }
 }
 
 nav {
   display: inline-block;
+  ul{
+    margin-top: 0.3rem;
+  }
   li {
     margin: auto 1em;
     list-style: none;
