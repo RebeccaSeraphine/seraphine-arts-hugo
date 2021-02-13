@@ -10,14 +10,14 @@
   <section>
     <h2>{{i18n "home.illustrationsheader" | title}}</h2>
     {{ .Scratch.Set "pageNumber" "3"}}
-    {{ .Scratch.Set "category" (i18n "nav.illustrations" | lower)}}
+    {{ .Scratch.Set "category" "illustrations"}}
     {{- partial "latest.html" . -}}
   </section>
       
   <section>
     <h2>{{i18n "home.creativecornerheader" | title}}</h2>
     {{ .Scratch.Set "pageNumber" "3"}}
-    {{ .Scratch.Set "category" (i18n "nav.creativecorner" | lower)}}
+    {{ .Scratch.Set "category" "creative-corner"}}
     {{- partial "latest.html" . -}}
   </section>
 </div>

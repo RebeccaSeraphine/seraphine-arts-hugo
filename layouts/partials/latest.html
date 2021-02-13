@@ -1,8 +1,7 @@
 {{ $num := .Scratch.Get "pageNumber"}}
 {{ $cat := .Scratch.Get "category" | lower }}
 
-{{- range .Pages -}}
-  {{- if eq (lower .Name)  $cat -}}
+{{- range where .Pages "Section" $cat -}}
     {{ range first $num .Pages.ByDate.Reverse }} 
       <div class="box">
         <a href="{{ .RelPermalink }}">
@@ -16,5 +15,4 @@
       </div>
     {{ end }} 
     <a class="button" href="{{.RelPermalink}}">{{ i18n "buttons.showmore"}}</a>
-  {{ end }} 
 {{ end }}
