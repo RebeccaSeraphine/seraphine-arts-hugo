@@ -2,6 +2,7 @@ nav:
   gallery: "gallery"
   products: "products"
   legal: "legal information"
+  shipping: "shipping information"
 home:
   galleryheader: "Dese mi pix :)"
   productheader: "Dese mi products :)"
