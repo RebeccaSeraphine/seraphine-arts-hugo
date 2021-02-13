@@ -2,21 +2,21 @@
   <!-- <h1>{{ .Title | title }}</h1> -->
   <div class="list-gallery">
     {{ range .Pages.ByPublishDate.Reverse }}
-      <div class="post">
-        <a class="image-post" href="{{ .RelPermalink }}">
-          {{ .Scratch.Set "width" "900"}} 
-          {{ .Scratch.Set "quality" "60"}}
-          {{- partial "attachedImage.html" . -}}
-          <div class="image-overlay">
-            <div class="image-text">   
+      <div class="hovereffect">
+        <a  href="{{ .RelPermalink }}">
+          <div class="image-post">
+            {{ .Scratch.Set "width" "400"}} 
+            {{ .Scratch.Set "quality" "70"}}
+            {{- partial "attachedImage.html" . -}}
+          </div>
+          <div class="overlay">
+            <div class="overlay-text">   
               <h3>{{ .Title | title }}</h3>
-              <p>{{ .Summary }}</p>
+              <p>{{ .Date.Format "2006" }}</p>
+              <!-- <p>{{ .Summary }}</p> -->
             </div>
           </div>
         </a>
-        <!-- {{- $imageResource := resources.Get "images/welcomeimage.jpg" -}} 
-        {{ $image := $imageResource.Resize "1080x q80" }}
-        <img id="welcomeimage" src="{{ $image.RelPermalink }}" alt="welcome image" /> -->
       </div>
       {{ end }} 
     </div>
