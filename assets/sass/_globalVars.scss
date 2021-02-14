@@ -3,16 +3,15 @@ $bgColor: #ffffff !default;
 $fontColor: #000000 !default;
 $primaryColor: #34d3bb;
 
-// overwrite, for dark scheme
-// @media (prefers-color-scheme: dark) {
-//   $bgColor: #121212 !global; // only local scope, if not !global
-//   $fgColor: #ffffff !global;
-//   $primaryColor: #3a59b8 !global;
-// }
-
 $fontStack: "Quicksand", "Open Sans", sans-serif;
 
 @font-face {
-    font-family: Quicksand;
-    src: url("../fonts/Quicksand-Regular.ttf") format("ttf");
-  }
+  font-family: Quicksand;
+  src: url("../fonts/Quicksand-Regular.ttf") format("ttf");
+}
+
+// font-awesome
+$fa-font-path: "../font-awesome";
+@import "font-awesome/fontawesome.scss";
+@import "font-awesome/solid.scss";
+@import "font-awesome/brands.scss";

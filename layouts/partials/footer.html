@@ -4,7 +4,9 @@
     <a href="{{ "legal/" | relLangURL }}">{{- i18n "nav.legal" | title -}}</a>
     <a href="{{ "shipping/" | relLangURL }}">{{- i18n "nav.shipping" | title -}}</a>
   </div>
-    
+
+  {{ partial "social-icons.html" .}}
+
   <div>
     <p>© 2018 - {{ .Date.Format "2006" }} Seraphine Arts</p>
     <p>{{ i18n "footer.rightsreserved" }}</p>
