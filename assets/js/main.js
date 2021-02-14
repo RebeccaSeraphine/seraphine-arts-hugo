@@ -1,1 +1,4 @@
-console.log("js-include test");
+function toggleResponsiveNav() {
+  var nav = document.getElementById("topnav");
+  nav.classList.toggle("responsive");
+}

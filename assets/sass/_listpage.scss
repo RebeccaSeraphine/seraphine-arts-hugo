@@ -11,19 +11,19 @@
 }
 
 /* Responsive gallery layout */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: $breakpoint-03) {
   .list-gallery {
     grid-template-columns: repeat(4, 25%);
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: $breakpoint-02) {
   .list-gallery {
     grid-template-columns: repeat(2, 50%);
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: $breakpoint-01) {
   .list-gallery {
     grid-template-columns: repeat(1, 100%);
   }
