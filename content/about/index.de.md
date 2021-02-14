@@ -6,7 +6,7 @@ type: "service-info"
 layout: "about"
 menu:
   main:
-    weight: 4
+    weight: 5
 ---
 
 Irgendwelche Informationen zu mir selbst
