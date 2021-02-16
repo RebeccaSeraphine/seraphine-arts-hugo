@@ -10,9 +10,11 @@
   
   <br/>
   
-  {{ .Scratch.Set "width" "1000"}}
-  {{ .Scratch.Set "quality" "95"}}
-  {{- partial "attachedImage.html" . -}}
+  <div class="single-page-image">
+    {{ .Scratch.Set "width" "1000"}}
+    {{ .Scratch.Set "quality" "95"}}
+    {{- partial "attachedImage.html" . -}}
+  </div>
   
   {{ .Content }}
 </div>
