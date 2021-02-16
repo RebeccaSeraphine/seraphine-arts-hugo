@@ -64,7 +64,7 @@ We use the Device Information that we collect to help us screen for potential ri
 
 ### Sharing you personal Information
 
-We share your Personal Information with third parties to help us use your Personal Information, as described above. We use Shopify to power our online store--you can read more about how Shopify uses your Personal Information here: https://www.shopify.com/legal/privacy.
+We share your Personal Information with third parties to help us use your Personal Information, as described above. We use Shopify to power our online store--you can read more about how Shopify uses your Personal Information here: [https://www.shopify.com/legal/privacy](https://www.shopify.com/legal/privacy).
 
 ### Do not track
 
@@ -72,7 +72,7 @@ Please note that we do not alter our Site’s data collection and use practices 
 
 ### Your rights
 
-If you are a European resident, you have the right to access personal information we hold about you and to ask that your personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us at seraphinearts@gmail.com.
+If you are a European resident, you have the right to access personal information we hold about you and to ask that your personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us at [seraphinearts@gmail.com](mailto:seraphinearts@gmail.com).
 
 Additionally, if you are a European resident we note that we are processing your information in order to fulfill contracts we might have with you (for example if you make an order through the Site), or otherwise to pursue our legitimate business interests listed above. Additionally, please note that your information will be transferred outside of Europe, including to Canada and the United States.
 
@@ -86,9 +86,9 @@ We may update this privacy policy from time to time in order to reflect, for exa
 
 ### Contact us
 
-For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e‑mail at [seraphinearts@gmail.com](mailto:seraphinearts@gmail.com) or by mail using the details provided below:
+For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e‑mail at [seraphinearts@gmail.com](mailto:seraphinearts@gmail.com) or by mail using the details provided below: 
 
-Seraphine Arts Rebecca Müller Rahel-Straus-Str. 19, 76137 Karlsruhe, Deutschland (Germany)
+Seraphine Arts, Rebecca Müller, Rahel-Straus-Str. 19, 76137 Karlsruhe, Deutschland (Germany)
 
 ## Terms of Service
 
