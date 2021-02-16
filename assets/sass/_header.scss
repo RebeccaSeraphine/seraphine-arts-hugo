@@ -1,5 +1,4 @@
 $header-height: 5rem;
-$header-height-1: 4rem;
 
 header {
   width: 100%;
@@ -107,7 +106,11 @@ nav {
   width: $header-height;
   outline: none;
   border: none;
-  padding: 1rem;
-  background-color: $primaryColor;
+  padding: 2rem 1rem 2rem 1rem;
   font-size: 1.6rem;
+  background-color: $bgColor;
+
+  &:hover{
+    color: $primaryColor;
+  }
 }
