@@ -1,7 +1,7 @@
 <nav id="topnav">
   <ul>
     {{- $imageResource := resources.Get "images/seraphine-arts-logo.png" -}}
-    {{ $image := $imageResource.Fit "40x40" }}
+    {{ $image := $imageResource.Fit "100x100" }}
     <li>
       <a id="nav-brand" href="{{ "/" | relLangURL }}"> 
         <img src="{{ $image.RelPermalink }}" alt="home" />
@@ -21,7 +21,7 @@
     <li>
       {{- partial "i18nlist.html" . -}}
     </li>
-    <li id="nav-icon">
+    <li id="burger-menu">
       <button type="button" id="burger-button" onclick="toggleResponsiveNav()">
         <i class="fa fa-bars"></i>
       </button>

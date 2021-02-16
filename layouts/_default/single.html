@@ -1,16 +1,19 @@
 {{ define "main" }}
+<div id="{{- replace .Title " " "-" | lower -}}-page">
+
   <h1>{{ .Title | title }}</h1>
   <br />
-
+  
   {{- range first 1 (.Resources.Match "pdf/*") -}}
-    <a class="button" href="{{.RelPermalink}}" target="_blank">{{ i18n "buttons.pdfdownload" }}</a>
+  <a class="button" href="{{.RelPermalink}}" target="_blank">{{ i18n "buttons.pdfdownload" }}</a>
   {{ end }}
-
+  
   <br/>
   
   {{ .Scratch.Set "width" "1000"}}
   {{ .Scratch.Set "quality" "95"}}
   {{- partial "attachedImage.html" . -}}
-
+  
   {{ .Content }}
+</div>
 {{ end }}
