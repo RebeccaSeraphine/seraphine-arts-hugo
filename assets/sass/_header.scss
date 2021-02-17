@@ -37,6 +37,11 @@ nav {
       & > #lang-picker > a {
         display: block;
         width: 100%;
+
+        & > img {
+          width: auto;
+          height: 3.5rem;
+        }
       }
 
       & > a,
@@ -52,6 +57,10 @@ nav {
 
       li {
         float: none;
+
+        &:not(:first-child) {
+          height: 4rem;
+        }
 
         &,
         & > * {
@@ -129,7 +138,7 @@ nav {
   width: $header-height;
   outline: none;
   border: none;
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 2.5rem 1rem 2rem 1rem;
   font-size: 1.6rem;
   background-color: $bgColor;
 
