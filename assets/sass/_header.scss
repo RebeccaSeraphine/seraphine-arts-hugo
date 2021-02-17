@@ -4,6 +4,9 @@ header {
   width: 100%;
   overflow: hidden;
   line-height: $header-height;
+  @media screen and (min-width: $breakpoint-03) {
+    margin-bottom: 1rem;
+  }
 }
 
 nav {

@@ -3,7 +3,7 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        <div class="main" id="content">
+        <div class="main" id="{{- replace .Title " " "-" | lower -}}-page">
             {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
