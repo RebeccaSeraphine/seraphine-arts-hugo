@@ -109,6 +109,10 @@ nav {
         height: 1.5rem;
         width: 100%;
       }
+
+      & > #lang-picker > a > img {
+        height: 1.1rem;
+      }
     }
   }
 }
