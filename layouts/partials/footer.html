@@ -1,15 +1,21 @@
 <footer>
   <hr>
+  <a href="#top" id="top-button">{{ i18n "nav.top"}}</a>
+  <br/>
+  <br/>
+  
+  {{ partial "social-icons.html" .}}
+  <br/>
+  <br/>
+
   <div>
     <a href="{{ "legal/" | relLangURL }}">{{- i18n "nav.legal" | title -}}</a>
+    <br/>
     <a href="{{ "shipping/" | relLangURL }}">{{- i18n "nav.shipping" | title -}}</a>
   </div>
-
-  {{ partial "social-icons.html" .}}
-
+  <br/>
   <div>
     <p>© 2018 - {{ .Date.Format "2006" }} Seraphine Arts</p>
     <p>{{ i18n "footer.rightsreserved" }}</p>
   </div>
-  <a href="#top">{{ i18n "nav.top"}}</a>
 </footer>

@@ -2,11 +2,14 @@
 @import "header";
 @import "footer";
 @import "listpage";
-@import "index";
+@import "single-pages/index";
+@import "single-pages/legal";
+@import "single-pages/shop";
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -16,6 +19,13 @@ body {
   text-align: center;
   font: 16px $fontStack;
   line-height: 1.2;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 html {
@@ -33,6 +43,13 @@ a {
   }
 }
 
+.single-page-image {
+  padding: 0 1%;
+}
+img {
+  width: 98%;
+}
+
 .button {
   display: block;
   margin: 2em auto;
@@ -40,4 +57,13 @@ a {
   padding: 1em 2em;
   border: 1px solid $primaryColor;
   background-color: $primaryColor;
+}
+
+.social-icons {
+  a {
+    padding: 1rem;
+  }
+  i {
+    font-size: 1.4rem;
+  }
 }

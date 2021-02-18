@@ -1,0 +1,16 @@
+#shop-page {
+  #shop-categories {
+    @media screen and (min-width: $breakpoint-01) {
+      display: flex;
+      justify-content: space-around;
+
+      & > a {
+        display: inline-block;
+      }
+
+      & > a {
+        width: 45%;
+      }
+    }
+  }
+}

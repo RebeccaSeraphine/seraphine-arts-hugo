@@ -3,6 +3,11 @@ $bgColor: #ffffff !default;
 $fontColor: #000000 !default;
 $primaryColor: #34d3bb;
 
+$breakpoint-01: 600px;
+$breakpoint-02: 992px;
+$breakpoint-03: 1200px;
+
+
 $fontStack: "Quicksand", "Open Sans", sans-serif;
 
 @font-face {

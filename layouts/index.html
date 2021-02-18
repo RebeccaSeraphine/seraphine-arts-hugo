@@ -6,6 +6,11 @@
     <img id="welcomeimage" src="{{ $image.RelPermalink }}" alt="welcome image" />
   </section>
 
+  <section class="landing-page-text">
+    <h2>{{- i18n "home.text01.title" | title -}}</h2>
+    <p>{{- i18n "home.text01.content" -}}</p>
+  </section>
+  
   <section id="landingpage-section-illustrations">
     <a href="{{ "illustrations/" | relLangURL }}">{{- i18n "nav.illustrations" | title -}}
       <h2>{{i18n "home.illustrationsheader" | title}}</h2>
@@ -14,7 +19,12 @@
     {{ .Scratch.Set "category" "illustrations"}}
     {{- partial "latest.html" . -}}
   </section>
-      
+  
+  <section class="landing-page-text">
+    <h2>{{- i18n "home.text02.title" | title -}}</h2>
+    <p>{{- i18n "home.text02.content" -}}</p>
+  </section>
+
   <section>
     <h2>{{i18n "home.creativecornerheader" | title}}</h2>
     {{ .Scratch.Set "pageNumber" "3"}}
