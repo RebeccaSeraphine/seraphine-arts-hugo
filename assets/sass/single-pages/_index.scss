@@ -1,6 +1,22 @@
-#an-artsy-page-page {
-  #welcomeimage {
-    width: 100%;
+#index-page {
+  #welcomeimage-section {
+    position: relative;
+    #welcomeimage {
+      width: 100%;
+    }
+
+    #welcomeimage-frame {
+      position: absolute;
+      background-color: rgba($fontColor, 0.5);
+      bottom: 2rem;
+      right: 2rem;
+      padding: 2rem 4rem 0 4rem;
+      min-width: 30%;
+
+      #welcomeimage-text {
+        color: $bgColor;
+      }
+    }
   }
 
   #landingpage-section-illustrations {

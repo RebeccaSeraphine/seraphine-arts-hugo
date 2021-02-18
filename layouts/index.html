@@ -1,9 +1,13 @@
 {{ define "main" }}
 <div>
-  <section>
+  <section id="welcomeimage-section">
     {{- $imageResource := resources.Get "images/colorful-wall-art.jpg" -}} 
     {{ $image := $imageResource.Resize "2160x q100" }}
-    <img id="welcomeimage" src="{{ $image.RelPermalink }}" alt="welcome image" />
+    <img id="welcomeimage" src="{{ $image.RelPermalink }}" alt="welcome image"/>
+    <div id="welcomeimage-frame">
+      <p id="welcomeimage-text">{{ i18n "home.callToAction.frame" }}</p>
+      <a id="welcomeimage-button" class="button" href="{{ "shop/" | relLangURL }}">{{ i18n "home.callToAction.button" }}</a>
+    </div>
   </section>
 
   <section class="landing-page-text">
