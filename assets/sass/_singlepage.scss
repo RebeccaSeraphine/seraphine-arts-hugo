@@ -15,4 +15,28 @@ $description-width: 25rem;
       margin: auto 2rem auto $description-width;
     }
   }
+
+  .single-nav-link {
+    display: inline;
+    position: relative;
+    padding: 2rem;
+    font-size: 1.6rem;
+    
+    a > i > .tooltip {
+      font-size: 1rem;
+      visibility: hidden;
+      position: absolute;
+      top: 4rem; left:1rem;
+      padding: 0.4rem 0.4rem;
+      min-width: 8rem;
+      color: $bgColor;
+      background-color: rgba($fontColor, 0.5);
+      font-family: $fontStack;
+      border-radius: 10px;
+    }
+
+    a:hover > i > .tooltip {
+      visibility: visible;
+    }
+  }
 }

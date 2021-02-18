@@ -45,7 +45,7 @@ a {
 }
 
 .clearfix {
-  overflow: auto;
+  overflow: visible;
 
   &::after {
     content: "";
