@@ -2,9 +2,9 @@
 <html>
     {{- partial "head.html" . -}}
     <body>
-        <div id="footer-pusher">
+        <div class="footer-pusher">
             {{- partial "header.html" . -}}
-            <div class="main" id="{{- replace .Title " " "-" | lower -}}-page">
+            <div class="main" id="{{- ((replace .RelPermalink "de/" "" ) | anchorize) | default "index" -}}-page">
                 {{- block "main" . }}{{- end }}
             </div>
         </div>

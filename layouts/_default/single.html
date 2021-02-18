@@ -42,7 +42,7 @@
 
     {{- range first 1 (.Resources.Match "pdf/*") -}}
       <a class="button" href="{{.RelPermalink}}" target="_blank">{{ i18n "buttons.pdfdownload" }}</a>
-      {{ end }}
+    {{ end }}
       
   </div>
 {{ end }}
