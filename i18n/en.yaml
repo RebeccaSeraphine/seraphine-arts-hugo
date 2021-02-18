@@ -5,6 +5,12 @@ nav:
 home:
   illustrationsheader: "Dese mi pix :)"
   creativecornerheader: "Dese mi coloring pages :)"
+  text01:
+    title: "text01 headline"
+    content: "text01 content"
+  text02:
+    title: "text02 headline"
+    content: "text02 content"
 buttons:
   pdfdownload: "Download PDF"
   showmore: "Show me more"
