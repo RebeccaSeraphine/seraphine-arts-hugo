@@ -1,0 +1,18 @@
+$description-width: 25rem;
+
+.single-page {
+  @media screen and (min-width: $breakpoint-02) {
+    .description {
+      display: block;
+      position: fixed;
+      float: left;
+      width: $description-width;
+      padding: 3rem 1rem;
+    }
+
+    .single-page-image {
+      display: block;
+      margin: auto 2rem auto $description-width;
+    }
+  }
+}

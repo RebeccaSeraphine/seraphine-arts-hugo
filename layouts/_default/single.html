@@ -1,18 +1,34 @@
 {{ define "main" }}
-  <h1>{{ .Title | title }}</h1>
-  <br />
-  
-  {{- range first 1 (.Resources.Match "pdf/*") -}}
-    <a class="button" href="{{.RelPermalink}}" target="_blank">{{ i18n "buttons.pdfdownload" }}</a>
-  {{ end }}
-  
-  <br/>
-  
-  <div class="single-page-image">
-    {{ .Scratch.Set "width" "1000"}}
-    {{ .Scratch.Set "quality" "95"}}
-    {{- partial "attachedImage.html" . -}}
+  <div class="single-page clearfix">
+    <div class="description">
+      <h1>{{ .Title | title }}</h1>
+      <p>{{ .Content }}</p>
+    </div>
+    
+    <div class="single-page-image">
+      {{ .Scratch.Set "width" "1000"}}
+      {{ .Scratch.Set "quality" "95"}}
+      {{- partial "attachedImage.html" . -}}
+    </div>
+
+    {{- range first 1 (.Resources.Match "pdf/*") -}}
+      <a class="button" href="{{.RelPermalink}}" target="_blank">{{ i18n "buttons.pdfdownload" }}</a>
+    {{ end }}
+
+    <div class="next-post">
+      {{ with .NextInSection }}
+      <a href="{{ .Permalink }}">{{ .Title | title | truncate 50 "..." }}</a>
+      {{ end }}
+    </div>
+
+    <div class="back-to-collection">
+      <a href="{{ .Parent.RelPermalink }}">{{- i18n "nav.collection" -}}</a>
+    </div>
+    
+    <div class="previous-post">
+      {{ with .PrevInSection }}
+      <a href="{{ .Permalink }}">{{ .Title | title | truncate 50 "..."}}</a>
+      {{ end }}
+    </div>
   </div>
-  
-  {{ .Content }}
 {{ end }}

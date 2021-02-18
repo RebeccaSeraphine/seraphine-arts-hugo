@@ -2,6 +2,7 @@
 @import "header";
 @import "footer";
 @import "listpage";
+@import "singlepage";
 @import "single-pages/index";
 @import "single-pages/legal";
 @import "single-pages/shop";
@@ -40,6 +41,16 @@ a {
 
   &:hover {
     color: $primaryColor;
+  }
+}
+
+.clearfix {
+  overflow: auto;
+
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 }
 
