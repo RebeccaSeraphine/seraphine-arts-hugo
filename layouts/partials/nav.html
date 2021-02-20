@@ -12,7 +12,6 @@
         <p class="brand-name">Seraphine Arts</p>
       </a>
     </li>
-    
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
       <li>
@@ -25,6 +24,7 @@
     <li>
       {{- partial "social-icons.html" . -}}
     </li>
+  </span>
     <li id="burger-menu">
       <button type="button" id="burger-button" onclick="toggleResponsiveNav()">
         <i class="fa fa-bars"></i>

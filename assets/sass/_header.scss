@@ -25,7 +25,7 @@ nav {
       text-align: left;
 
       // disable mobile nav by default except for brandicon and burger menu
-      &:not(:first-child, :last-child) {
+      &:not(:first-child, :nth-child(2), :last-child) {
         display: none;
       }
 
@@ -33,28 +33,26 @@ nav {
         float: right;
       }
 
+      & > .social-icons > a:first-of-type{
+        padding-left: 0rem;
+      }
+      & > .social-icons{
+        margin-bottom: 2rem;
+      }
+
       & > a,
       & > #lang-picker > a {
         display: block;
         width: 100%;
-
-        & > img {
-          width: auto;
-          height: 4rem;
-        }
       }
-
-      &#lang-picker{
-        max-width: 1rem;
-        max-height: 3rem;
-      }
-      
 
       & > a,
-      & > .social-icons > a > i,
+      & > .social-icons,
+      & > #lang-picker{
+        line-height: 3rem;
+      }
       & > #lang-picker > a > img {
-        padding: 1rem;
-        line-height: 2rem;
+        max-height: 1rem;
       }
     }
 
@@ -62,20 +60,22 @@ nav {
       position: fixed;
 
       li {
-        float: none;
-
-        &:not(:first-child) {
-          height: 4rem;
+        &:not(:first-child){
+          float: none;
+          display: block;
+          padding-left:1rem;
         }
-
+        &:nth-child(3) > a{
+          margin-top:1.2rem;
+        }
         &,
         & > * {
           display: block;
         }
 
-        &:nth-child(2n) {
-          background-color: rgba($primaryColor, $alpha: 0.3);
-        }
+        // &:nth-child(2n+3) {
+        //   background-color: rgba($primaryColor, $alpha: 0.2);
+        // }
 
         &#burger-menu {
           position: fixed;
@@ -90,7 +90,6 @@ nav {
   @media screen and (min-width: $breakpoint-03) {
     ul{
       display: flex;
-      background-color: #ffffd9;
       height: 5rem;
     }
     li {
@@ -134,6 +133,7 @@ nav {
 
 #nav-brandname{
   font-size: 1.5rem;
+  line-height: $header-height;
 }
 
 #burger-button {
@@ -141,8 +141,8 @@ nav {
   width: $header-height;
   outline: none;
   border: none;
-  padding: 2.5rem 1rem 2rem 1rem;
-  font-size: 1.6rem;
+  vertical-align: middle;
+  font-size: 1.5rem;
   background-color: $bgColor;
 
   &:hover {
