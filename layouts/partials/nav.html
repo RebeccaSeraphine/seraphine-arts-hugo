@@ -3,8 +3,12 @@
     {{- $imageResource := resources.Get "images/seraphine-arts-logo.png" -}}
     {{ $image := $imageResource.Fit "100x100" }}
     <li>
-      <a id="nav-brand" href="{{ "/" | relLangURL }}"> 
+      <a id="nav-logo" href="{{ "/" | relLangURL }}"> 
         <img src="{{ $image.RelPermalink }}" alt="home" />
+      </a>
+    </li>
+    <li>
+      <a id="nav-brandname" href="{{ "/" | relLangURL }}"> 
         <p class="brand-name">Seraphine Arts</p>
       </a>
     </li>
@@ -15,11 +19,11 @@
         <a class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ replace .Name "-" " " | title }}</a>
       </li>
     {{ end }}
-    <li>
-      {{- partial "social-icons.html" . -}}
+    <li class="right-nav">
+      {{- partial "i18nlist.html" . -}}
     </li>
     <li>
-      {{- partial "i18nlist.html" . -}}
+      {{- partial "social-icons.html" . -}}
     </li>
     <li id="burger-menu">
       <button type="button" id="burger-button" onclick="toggleResponsiveNav()">

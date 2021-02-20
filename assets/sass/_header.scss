@@ -40,9 +40,15 @@ nav {
 
         & > img {
           width: auto;
-          height: 3.5rem;
+          height: 4rem;
         }
       }
+
+      &#lang-picker{
+        max-width: 1rem;
+        max-height: 3rem;
+      }
+      
 
       & > a,
       & > .social-icons > a > i,
@@ -82,59 +88,52 @@ nav {
 
   // desktop
   @media screen and (min-width: $breakpoint-03) {
+    ul{
+      display: flex;
+      background-color: #ffffd9;
+      height: 5rem;
+    }
     li {
-      vertical-align: middle;
-
-      &:not(:nth-last-child(-n + 3)) {
-        float: left;
+      &:nth-child(n+3){
+        padding: 0.1rem 1rem;
       }
-      &:nth-last-child(-n + 3) {
-        float: right;
+      &:nth-child(3){
+        padding-left: 2rem;
       }
-
       &#burger-menu {
         display: none;
       }
 
       & > a {
-        display: inline-block;
-
         &.active {
           color: $primaryColor;
         }
       }
 
       & > * {
-        padding: 0.1rem 1rem;
         height: 1.5rem;
         width: 100%;
       }
 
       & > #lang-picker > a > img {
         height: 1.1rem;
+        max-width: 2.2rem;
+      }
+      &.right-nav{
+        margin-left: auto;
       }
     }
   }
 }
 
-#nav-brand {
-  display: inline-block;
-  line-height: $header-height;
+#nav-logo > img{
+    max-height: 5rem;
+    max-width: 5rem;
+    padding: 0.8rem 0.8rem;
+}
 
-  & > * {
-    display: inline;
-    line-height: $header-height;
-    vertical-align: middle;
-  }
-  & > p {
-    font-size: 1.5rem;
-  }
-
-  & > img {
-    height: $header-height;
-    width: auto;
-    padding: 0.5rem 0.5rem;
-  }
+#nav-brandname{
+  font-size: 1.5rem;
 }
 
 #burger-button {
