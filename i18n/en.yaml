@@ -4,19 +4,21 @@ nav:
   top: "back to top"
   collection: "back to collection"
 home:
-  illustrationsheader: "Dese mi pix :)"
-  creativecornerheader: "Dese mi coloring pages :)"
+  illustrationsheader: "Latest illustrations"
+  creativecornerheader: "Relax With Adult Colouring"
+  shopheader: "Colourful home decor"
   text01:
-    title: "text01 headline"
-    content: "text01 content"
+    title: "Welcome"
+    content: "Hello wanderer and welcome to this colourful place! I am Seraphine, an artist and colouring book author from Germany who creates intricate illustrations in a contemporary style. My mission is to connect humanity and nature through art that inspires happiness and positive change. I hope you enjoy your stay and find something that makes you smile."
   text02:
-    title: "text02 headline"
-    content: "text02 content"
+    title: "Relax with adult colouring"
+    content:  "Text text text"
   callToAction:
-    button: "call to action"
-    frame: "we call upon you to act!"
+    button: "Explore wall art"
+    frame: "Intricate artworks that bring the wonders of nature to your favourite spaces"
 buttons:
   pdfdownload: "Download PDF"
-  showmore: "Show me more"
+  togallery: "Browse all"
+  tocreativecorner: "Get creative"
 footer:
   rightsreserved: "All Rights Reserved."

@@ -19,7 +19,7 @@ body {
   width: 100%;
   text-align: center;
   font: 16px $fontStack;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 h1,
@@ -62,9 +62,14 @@ a {
   display: block;
   margin: 2em auto;
   width: 10em;
-  padding: 1em 2em;
-  border: 1px solid $primaryColor;
+  padding: 1em 1em;
   background-color: $primaryColor;
+  color: $bgColor;
+}
+
+.button:hover{
+  background-color: $primaryColorHover;
+  color: $bgColor;
 }
 
 .social-icons {

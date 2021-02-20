@@ -1,5 +1,5 @@
 ---
-title: "about me"
+title: "about"
 date: 2021-02-13T12:15:44+01:00
 draft: true
 type: "service-info"

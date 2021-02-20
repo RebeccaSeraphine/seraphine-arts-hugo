@@ -1,20 +1,21 @@
 #index-page {
   #welcomeimage-section {
     position: relative;
+    margin-top: 0;
     #welcomeimage {
       width: 100%;
     }
 
     #welcomeimage-frame {
       position: absolute;
-      background-color: rgba($fontColor, 0.5);
+      background-color: rgba($fontColor, 0.6);
       bottom: 2rem;
       right: 2rem;
-      padding: 2rem 4rem 0 4rem;
-      min-width: 30%;
-
-      #welcomeimage-text {
-        color: $bgColor;
+      padding: 2rem 2rem 0 2rem;
+      width: 30%;
+      color: $bgColor;
+      #welcomeimage-button{
+        margin-top: 1.5rem;
       }
     }
   }
@@ -23,16 +24,31 @@
     margin-top: 2rem;
   }
 
+  .landing-page-text{
+    padding: 0rem 2rem;
+  }
+
   section {
-    margin: 3rem 0;
+    margin: 5rem 0;
   }
 }
 
 // mobile
 @media screen and (max-width: $breakpoint-03) {
   #index-page {
-    section {
-      margin: 0;
+    #welcomeimage-section {
+      #welcomeimage-frame {
+        display: none;
+      }
+    }
+  }
+}
+
+// desktop
+@media screen and (min-width: $breakpoint-03) {
+  #index-page {
+    .landing-page-text{
+      padding: 1rem 10rem 2rem 10rem;
     }
   }
 }

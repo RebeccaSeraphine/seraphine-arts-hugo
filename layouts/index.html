@@ -22,11 +22,20 @@
     {{ .Scratch.Set "pageNumber" "5"}}
     {{ .Scratch.Set "category" "illustrations"}}
     {{- partial "latest.html" . -}}
+    <a class="button" href="{{ "illustrations/" | relLangURL }}">{{ i18n "buttons.togallery" }}</a>
   </section>
   
-  <section class="landing-page-text">
+  <!-- <section class="landing-page-text">
     <h2>{{- i18n "home.text02.title" | title -}}</h2>
     <p>{{- i18n "home.text02.content" -}}</p>
+  </section> -->
+
+  <section>
+    <h2>{{i18n "home.shopheader" | title}}</h2>
+    {{ .Scratch.Set "pageNumber" "3"}}
+    {{ .Scratch.Set "category" "creative-corner"}}
+    {{- partial "latest.html" . -}}
+    <a class="button" href="{{ "creative-corner/" | relLangURL }}">{{ i18n "buttons.tocreativecorner" }}</a>
   </section>
 
   <section>
@@ -34,6 +43,7 @@
     {{ .Scratch.Set "pageNumber" "3"}}
     {{ .Scratch.Set "category" "creative-corner"}}
     {{- partial "latest.html" . -}}
+    <a class="button" href="{{ "creative-corner/" | relLangURL }}">{{ i18n "buttons.tocreativecorner" }}</a>
   </section>
 </div>
 {{ end }}
