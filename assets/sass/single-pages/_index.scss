@@ -25,11 +25,14 @@
   }
 
   .landing-page-text{
-    padding: 0rem 2rem;
+    padding: 1rem 2rem;
   }
 
   section {
     margin: 5rem 0;
+  }
+  .text-link{
+    color:$primaryColor;
   }
 }
 
@@ -51,7 +54,7 @@
 @media screen and (min-width: $breakpoint-03) {
   #index-page {
     .landing-page-text{
-      padding: 1rem 10rem 2rem 10rem;
+      padding: 1rem 10rem 1rem 10rem;
     }
   }
   .gallery-preview-mobile{

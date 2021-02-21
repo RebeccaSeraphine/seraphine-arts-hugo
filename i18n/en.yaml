@@ -6,19 +6,27 @@ nav:
 home:
   illustrationsheader: "Latest illustrations"
   creativecornerheader: "Relax With Adult Colouring"
-  shopheader: "Colourful home decor"
+  shopheader: "All time favourites"
   text01:
     title: "Welcome"
-    content: "Hello wanderer and welcome to this colourful place! I am Seraphine, an artist and colouring book author from Germany who creates intricate illustrations in a contemporary style. My mission is to connect humanity and nature through art that inspires happiness and positive change. I hope you enjoy your stay and find something that makes you smile."
+    content: "Hello wanderer and welcome to this colourful place! I am Seraphine, an artist and colouring book author from Germany who creates intricate illustrations in a contemporary style. My mission is to connect humanity and nature through art that inspires happiness and positive change. I hope you enjoy your stay and find something that makes you smile. You can find a gallery of my works "
+    link: "here"
   text02:
-    title: "Relax with adult colouring"
-    content:  "Text text text"
+    title: "Colourful home decor"
+    content:  " Intricate wall art that brings the wonders of nature to your favourite spaces, filling your home with vibrant colours and happy feelings. The contemporary artistic style adds a unique touch by combining elements from Western and Asian culture into a universe of carefully crafted patterns and details, offering something new to explore each time you revisit a piece. Glicée printed on durable, museum-quality Canson Aquarell paper for a vibrant colour reproduction."
+  text03:
+    title: "Colouring for adults"
+    content:  " Intricate wall art that brings the wonders of nature to your favourite spaces, filling your home with vibrant colours and happy feelings. The contemporary artistic style adds a unique touch by combining elements from Western and Asian culture into a universe of carefully crafted patterns and details, offering something new to explore each time you revisit a piece. Glicée printed on durable, museum-quality Canson Aquarell paper for a vibrant colour reproduction."
+  text04:
+    title: "Continue your journey"
+    content:  "You have reached the end of this page, thank you for scrolling this far. :) If you want to learn more about ..., please check out ... Do you still have questions, would like to commission a work or can't find what you are looking for, then please don't hesitate to send me a message here (LINK). ...."
   callToAction:
     button: "Explore wall art"
     frame: "Intricate artworks that bring the wonders of nature to your favourite spaces"
 buttons:
   pdfdownload: "Download PDF"
   togallery: "Browse all"
+  toshop: "Find yours"
   tocreativecorner: "Get creative"
 footer:
   rightsreserved: "All Rights Reserved."
