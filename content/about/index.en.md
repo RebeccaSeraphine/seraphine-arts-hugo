@@ -9,4 +9,6 @@ menu:
     weight: 5
 ---
 
-Some random information about me, myself and I
+# A little bit about myself
+
+Nice to meet you! My name is Rebecca Seraphine. I am a German artist and illustrator who loves creating colourful works. Nature and adventure are my inspiration and the heart of my creations. I make digital drawings, watercolour paintings and recently I published my very first adult colouring book! Outside my colourful world, I am also a frontend developer and houseplant lover, living in my indoor jungle.

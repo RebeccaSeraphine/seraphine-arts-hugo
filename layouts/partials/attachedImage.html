@@ -1,6 +1,8 @@
 {{$width := .Scratch.Get "width"}}
 {{$qual := .Scratch.Get "quality"}}
+{{$num := default 1 (.Scratch.Get "numPics") }}
 
-{{- range first 1 (.Resources.ByType "image") -}}
-  <img src="{{ .RelPermalink }}" alt="{{.Name}}" />
+{{- range first $num (.Resources.ByType "image") -}}
+  {{- $image := .Resize (printf "%sx q%s" $width $qual) -}}
+  <img src="{{ $image.RelPermalink }}" alt="{{.Name}}" />
 {{ end }}

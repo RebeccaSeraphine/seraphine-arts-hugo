@@ -1,0 +1,13 @@
+#about-page {
+  padding: 0 1rem;
+
+  .images {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    
+    &>img {
+      width: 30%;
+    }
+  }
+}
