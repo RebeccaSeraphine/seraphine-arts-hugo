@@ -33,6 +33,9 @@
   }
   .text-link{
     color:$primaryColor;
+    &:hover{
+      color:$primaryColorHover;
+    }
   }
 
   .link-page-preview-section {
