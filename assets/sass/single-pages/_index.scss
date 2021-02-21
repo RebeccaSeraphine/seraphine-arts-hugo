@@ -42,6 +42,9 @@
       }
     }
   }
+  .gallery-preview-desktop {
+    display: none;
+  }
 }
 
 // desktop
@@ -50,5 +53,8 @@
     .landing-page-text{
       padding: 1rem 10rem 2rem 10rem;
     }
+  }
+  .gallery-preview-mobile{
+    display: none;
   }
 }

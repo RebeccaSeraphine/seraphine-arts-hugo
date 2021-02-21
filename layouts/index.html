@@ -19,9 +19,14 @@
     <a href="{{ "illustrations/" | relLangURL }}">{{- i18n "nav.illustrations" | title -}}
       <h2>{{i18n "home.illustrationsheader" | title}}</h2>
     </a>
-    {{ .Scratch.Set "pageNumber" "5"}}
+    <div class="gallery-preview-desktop">{{ .Scratch.Set "pageNumber" "5"}}
     {{ .Scratch.Set "category" "illustrations"}}
     {{- partial "latest.html" . -}}
+    </div>
+    <div class="gallery-preview-mobile">{{ .Scratch.Set "pageNumber" "4"}}
+      {{ .Scratch.Set "category" "illustrations"}}
+      {{- partial "latest.html" . -}}
+    </div>
     <a class="button" href="{{ "illustrations/" | relLangURL }}">{{ i18n "buttons.togallery" }}</a>
   </section>
   
