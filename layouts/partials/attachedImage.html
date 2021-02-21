@@ -1,6 +1,6 @@
-{{$width := .Scratch.Get "width"}}
-{{$qual := .Scratch.Get "quality"}}
-{{$num := default 1 (.Scratch.Get "numPics") }}
+{{- $width := default "500" (.Scratch.Get "width") -}}
+{{- $qual := default "80" (.Scratch.Get "quality") -}}
+{{- $num := default 1 (.Scratch.Get "numPics") -}}
 
 {{- range first $num (.Resources.ByType "image") -}}
   {{- $image := .Resize (printf "%sx q%s" $width $qual) -}}

@@ -38,13 +38,13 @@
     <p>{{- i18n "home.text02.content" -}}</p>
   </section>
 
-  <section>
+  <section class="link-page-preview-section">
     <!-- <h2>{{i18n "home.shopheader" | title}}</h2> -->
-    <!-- TODO: replace this by 2 images pointing to a) the fine art print shop page and b) the poster shop page -->
-    {{ .Scratch.Set "pageNumber" "3"}}
-    {{ .Scratch.Set "category" "creative-corner"}}
-    {{- partial "latest.html" . -}}
-    <a class="button" href="{{ "shop/" | relLangURL }}">{{ i18n "buttons.toshop" }}</a>
+    {{- .Scratch.Set "path" "shop/prints" -}}
+    {{- partial "linkpagepreview.html" . -}}
+
+    {{- .Scratch.Set "path" "shop/posters" -}}
+    {{- partial "linkpagepreview.html" . -}}
   </section>
 
   <section class="landing-page-text">
@@ -52,13 +52,13 @@
     <p>{{- i18n "home.text03.content" -}}</p>
   </section>
 
-  <section>
+  <section class="link-page-preview-section">
     <!-- <h2>{{i18n "home.creativecornerheader" | title}}</h2> -->
-    <!-- TODO: replace this by 2 images pointing to a) the colouring book shop page and b) the creative corner -->
-    {{ .Scratch.Set "pageNumber" "3"}}
-    {{ .Scratch.Set "category" "creative-corner"}}
-    {{- partial "latest.html" . -}}
-    <a class="button" href="{{ "creative-corner/" | relLangURL }}">{{ i18n "buttons.tocreativecorner" }}</a>
+    {{- .Scratch.Set "path" "shop/books" -}}
+    {{- partial "linkpagepreview.html" . -}}
+
+    {{- .Scratch.Set "path" "creative-corner" -}}
+    {{- partial "linkpagepreview.html" . -}}
   </section>
 
   <section class="landing-page-text">

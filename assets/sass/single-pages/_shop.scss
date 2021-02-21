@@ -1,15 +1,21 @@
 #shop-page {
+  padding: 0 1rem;
+
   #shop-categories {
+    margin-top: 2rem;
+
+    &>a {
+      max-width: 98%;
+      img {
+        width: 100%;
+      }
+    }
     @media screen and (min-width: $breakpoint-01) {
       display: flex;
       justify-content: space-around;
 
-      & > a {
-        display: inline-block;
-      }
-
-      & > a {
-        width: 45%;
+      &>a {
+        width: 30%;
       }
     }
   }

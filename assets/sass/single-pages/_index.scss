@@ -34,6 +34,20 @@
   .text-link{
     color:$primaryColor;
   }
+
+  .link-page-preview-section {
+    @media screen and (min-width: $breakpoint-01) {
+      display: flex;
+      justify-content: space-around;
+
+      &>a {
+        width: 45%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 // mobile

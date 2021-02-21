@@ -3,11 +3,17 @@
 
   .images {
     margin-top: 2rem;
-    display: flex;
-    justify-content: space-around;
-    
+
     &>img {
-      width: 30%;
+      max-width: 98%;
+    }
+    @media screen and (min-width: $breakpoint-01) {
+      display: flex;
+      justify-content: space-around;
+
+      &>img {
+        width: 30%;
+      }
     }
   }
 }
