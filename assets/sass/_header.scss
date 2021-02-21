@@ -57,6 +57,7 @@ nav {
     }
 
     &.responsive-visible {
+      border-bottom: 1px solid $fontColor;
       position: fixed;
 
       li {
