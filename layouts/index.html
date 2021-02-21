@@ -19,9 +19,9 @@
   </section>
   
   <section id="landingpage-section-illustrations">
-    <a href="{{ "illustrations/" | relLangURL }}">{{- i18n "nav.illustrations" | title -}}
-      <!-- <h2>{{i18n "home.illustrationsheader" | title}}</h2> -->
-    </a>
+    <!--<a href="{{ "illustrations/" | relLangURL }}">{{- i18n "nav.illustrations" | title -}}
+       <h2>{{i18n "home.illustrationsheader" | title}}</h2>
+    </a>-->
     <div class="gallery-preview-desktop">{{ .Scratch.Set "pageNumber" "5"}}
     {{ .Scratch.Set "category" "illustrations"}}
     {{- partial "latest.html" . -}}

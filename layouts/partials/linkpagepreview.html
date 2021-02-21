@@ -1,8 +1,9 @@
 {{- $path := .Scratch.Get "path" -}}
 
+
 {{ with .Site.GetPage $path }}
-  <a href="{{ .RelPermalink }}" class=".page-link-preview">
-    {{- partial "attachedImage.html" . -}}
-    <p>{{ .Title }}</p>
-  </a>
+<div class="page-link-preview">
+  {{- .Scratch.Set "showDate" false -}}
+  {{- partial "imageoverlay.html" . -}}
+</div>
 {{ end }}

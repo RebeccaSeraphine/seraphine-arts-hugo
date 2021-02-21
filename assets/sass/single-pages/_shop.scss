@@ -12,10 +12,12 @@
     }
     @media screen and (min-width: $breakpoint-01) {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
 
       &>a {
         width: 30%;
+        max-width: 30rem;
+        margin: 3rem;
       }
     }
   }

@@ -1,32 +1,32 @@
-.list-gallery{
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    img {
-      width: 100%;
+.list-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  img {
+    width: 100%;
+  }
+
+  /* Responsive gallery layout */
+  @media only screen and (max-width: $breakpoint-03) {
+    & {
+      grid-template-columns: repeat(4, 25%);
     }
+  }
+
+  @media only screen and (max-width: $breakpoint-02) {
+    & {
+      grid-template-columns: repeat(2, 50%);
+    }
+  }
+
+  @media only screen and (max-width: $breakpoint-01) {
+    & {
+      grid-template-columns: repeat(1, 100%);
+    }
+  }
 }
 
-.image-post{
+.image-post {
   margin: 0.2rem;
-}
-
-/* Responsive gallery layout */
-@media only screen and (max-width: $breakpoint-03) {
-  .list-gallery {
-    grid-template-columns: repeat(4, 25%);
-  }
-}
-
-@media only screen and (max-width: $breakpoint-02) {
-  .list-gallery {
-    grid-template-columns: repeat(2, 50%);
-  }
-}
-
-@media only screen and (max-width: $breakpoint-01) {
-  .list-gallery {
-    grid-template-columns: repeat(1, 100%);
-  }
 }
 
 /* Hovereffects */
@@ -53,8 +53,7 @@
     transform: scale(0, 1);
     .overlay-text {
       color: $primaryColor;
-     }
-     
+    }
   }
 
   &:hover .overlay {
@@ -77,4 +76,3 @@
     -webkit-filter: brightness(0.4);
   }
 }
-
