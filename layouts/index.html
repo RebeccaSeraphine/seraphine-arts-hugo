@@ -65,7 +65,11 @@
 
   <section class="landing-page-text">
     <h2>{{- i18n "home.text04.title" | title -}}</h2>
-    <p>{{- i18n "home.text04.content" -}}</p>
+    <p> {{- i18n "home.text04.content" -}}
+        <a class="text-link" href="{{ "about/" | relLangURL }}"> {{- i18n "home.text04.link1" -}}</a>
+        {{- i18n "home.text04.content-part2" -}}
+        <a class="text-link" href="mailto:seraphinearts@gmail.com">{{- i18n "home.text04.link2" -}}</a>
+        {{- i18n "home.text04.content-part3" -}}</p>
   </section>
 
 </div>

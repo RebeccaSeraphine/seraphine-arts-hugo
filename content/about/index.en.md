@@ -1,7 +1,7 @@
 ---
 title: "about"
 date: 2021-02-13T12:15:44+01:00
-draft: true
+draft: false
 type: "service-info"
 layout: "about"
 menu:
