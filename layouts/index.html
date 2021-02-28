@@ -19,9 +19,6 @@
   </section>
   
   <section id="landingpage-section-illustrations">
-    <!--<a href="{{ "illustrations/" | relLangURL }}">{{- i18n "nav.illustrations" | title -}}
-       <h2>{{i18n "home.illustrationsheader" | title}}</h2>
-    </a>-->
     <div class="gallery-preview-desktop">{{ .Scratch.Set "pageNumber" "5"}}
     {{ .Scratch.Set "category" "illustrations"}}
     {{- partial "latest.html" . -}}
@@ -39,7 +36,6 @@
   </section>
 
   <section class="link-page-preview-section">
-    <!-- <h2>{{i18n "home.shopheader" | title}}</h2> -->
     {{- .Scratch.Set "path" "shop/prints" -}}
     {{- partial "linkpagepreview.html" . -}}
 
@@ -55,7 +51,6 @@
   </section>
 
   <section class="link-page-preview-section">
-    <!-- <h2>{{i18n "home.creativecornerheader" | title}}</h2> -->
     {{- .Scratch.Set "path" "shop/books" -}}
     {{- partial "linkpagepreview.html" . -}}
 
