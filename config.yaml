@@ -1,9 +1,9 @@
-baseURL: "https://artsy.com"
+baseURL: "https://seraphine-arts.com"
 defaultContentLanguage: en
 languages:
   en:
-    title: "an artsy page"
+    title: "Seraphine Arts"
     weight: 1
   de:
-    title: "Kuhuuunst 🎨"
+    title: "Seraphine Arts"
     weight: 2
