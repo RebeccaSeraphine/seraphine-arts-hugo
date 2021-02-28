@@ -6,4 +6,4 @@ layout: "posters"
 draft: false
 ---
 
-posters
+Giclée printed posters on Epson matte paper, available in medium and large. The framed option comes in a black, semi-hardwood Adler frame with acrylite front protector and hanging hardware included.
