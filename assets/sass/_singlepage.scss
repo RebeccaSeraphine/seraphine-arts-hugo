@@ -4,15 +4,16 @@ $description-width: 25rem;
   @media screen and (min-width: $breakpoint-02) {
     .description {
       display: block;
-      position: fixed;
+      // position: fixed;
       float: left;
       width: $description-width;
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
     }
 
     .single-page-image {
       display: block;
       margin: auto 2rem auto $description-width;
+      padding: 2rem;
     }
   }
 

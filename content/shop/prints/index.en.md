@@ -6,4 +6,4 @@ layout: "prints"
 draft: false
 ---
 
-Museum-quality glicée prints on Hahnemühle German Etching paper with vivid colour reproduction and a crafty feel. Available in a small, medium and large size.
+Museum-quality giclée prints on Hahnemühle German Etching paper with vivid colour reproduction and a crafty feel. Available in a small, medium and large size.
