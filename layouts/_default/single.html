@@ -40,7 +40,7 @@
     </div>
 
     {{- range first 1 (.Resources.Match "pdf/*") -}}
-      <a class="button" href="{{.RelPermalink}}" target="_blank">{{ i18n "buttons.pdfdownload" }}</a>
+      <a class="button" href="{{.RelPermalink}}" target="_blank" aria-label="button for pdf download">{{ i18n "buttons.pdfdownload" }}</a>
     {{ end }}
       
   </div>
