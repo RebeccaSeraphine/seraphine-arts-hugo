@@ -5,7 +5,7 @@
   <a href="{{ .Permalink }}">
     {{- $imagePath := (printf "images/flag-%s.jpg" .Language) -}} {{- $imageResource := resources.Get $imagePath -}}
     {{$image := $imageResource.Fit "80x80" }}
-    <img src="{{$image.RelPermalink}}" />
+    <img loading="eager" src="{{$image.RelPermalink}}" />
   </a>
 
   {{ end }}

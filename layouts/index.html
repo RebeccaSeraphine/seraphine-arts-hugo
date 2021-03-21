@@ -3,7 +3,7 @@
   <section id="welcomeimage-section">
     {{- $imageResource := resources.Get "images/colorful-wall-art.jpg" -}} 
     {{ $image := $imageResource.Resize "2160x q100" }}
-    <img id="welcomeimage" src="{{ $image.RelPermalink }}" alt="welcome image"/>
+    <img loading="lazy" id="welcomeimage" src="{{ $image.RelPermalink }}" alt="welcome image"/>
     <div id="welcomeimage-frame">
       <p id="welcomeimage-text">{{ i18n "home.callToAction.frame" }}</p>
       <a id="welcomeimage-button" class="button" href="{{ "shop/prints/" | relLangURL }}">{{ i18n "home.callToAction.button" }}</a>

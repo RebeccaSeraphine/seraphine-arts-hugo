@@ -4,7 +4,7 @@
     {{ $image := $imageResource.Fit "100x100" }}
     <li>
       <a id="nav-logo" href="{{ "/" | relLangURL }}"> 
-        <img src="{{ $image.RelPermalink }}" alt="home" />
+        <img loading="eager" src="{{ $image.RelPermalink }}" alt="home" />
       </a>
     </li>
     <li>
