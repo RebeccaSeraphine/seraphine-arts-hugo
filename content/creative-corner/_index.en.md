@@ -7,4 +7,3 @@ menu:
     weight: 3
 ---
 
-coloring page blabla
