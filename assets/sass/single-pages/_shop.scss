@@ -22,3 +22,17 @@
     }
   }
 }
+
+.link-list {
+  margin: 1rem 2rem 2rem 2rem;
+  .link-list-row {
+    a{
+      display: inline-block;
+      margin: 0.5em auto;
+      width: 20em;
+      padding: 0.5em 1em;
+      border: 1px solid $primaryColor;
+    }
+  }
+}
+
