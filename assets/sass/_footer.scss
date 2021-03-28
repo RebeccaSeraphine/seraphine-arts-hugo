@@ -15,4 +15,9 @@ footer {
   hr {
     margin-bottom: 2rem;
   }
+  @media screen and (max-width: $breakpoint-02) {
+    a {
+      line-height: 3rem;
+    }
+  }
 }

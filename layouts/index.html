@@ -3,10 +3,10 @@
   <section id="welcomeimage-section">
     {{- $imageResource := resources.Get "images/colorful-wall-art.jpg" -}} 
     {{ $image := $imageResource.Resize "2160x q100" }}
-    <img id="welcomeimage" src="{{ $image.RelPermalink }}" alt="welcome image"/>
+    <img loading="lazy" id="welcomeimage" src="{{ $image.RelPermalink }}" alt="welcome image"/>
     <div id="welcomeimage-frame">
       <p id="welcomeimage-text">{{ i18n "home.callToAction.frame" }}</p>
-      <a id="welcomeimage-button" class="button" href="{{ "shop/prints/" | relLangURL }}">{{ i18n "home.callToAction.button" }}</a>
+      <a id="welcomeimage-button" class="button" href="{{ "shop/prints/" | relLangURL }}" aria-label="button to prints shop">{{ i18n "home.callToAction.button"}}</a>
     </div>
   </section>
 
@@ -17,11 +17,8 @@
     </p>
 
   </section>
-  
+
   <section id="landingpage-section-illustrations">
-    <!--<a href="{{ "illustrations/" | relLangURL }}">{{- i18n "nav.illustrations" | title -}}
-       <h2>{{i18n "home.illustrationsheader" | title}}</h2>
-    </a>-->
     <div class="gallery-preview-desktop">{{ .Scratch.Set "pageNumber" "5"}}
     {{ .Scratch.Set "category" "illustrations"}}
     {{- partial "latest.html" . -}}
@@ -30,7 +27,7 @@
       {{ .Scratch.Set "category" "illustrations"}}
       {{- partial "latest.html" . -}}
     </div>
-    <a class="button" href="{{ "illustrations/" | relLangURL }}">{{ i18n "buttons.togallery" }}</a>
+    <a class="button" href="{{ "illustrations/" | relLangURL }}" aria-label="button to gallery">{{ i18n "buttons.togallery" }}</a>
   </section>
   
   <section class="landing-page-text">
@@ -39,7 +36,6 @@
   </section>
 
   <section class="link-page-preview-section">
-    <!-- <h2>{{i18n "home.shopheader" | title}}</h2> -->
     {{- .Scratch.Set "path" "shop/prints" -}}
     {{- partial "linkpagepreview.html" . -}}
 
@@ -55,7 +51,6 @@
   </section>
 
   <section class="link-page-preview-section">
-    <!-- <h2>{{i18n "home.creativecornerheader" | title}}</h2> -->
     {{- .Scratch.Set "path" "shop/books" -}}
     {{- partial "linkpagepreview.html" . -}}
 
